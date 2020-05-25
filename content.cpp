@@ -3,6 +3,6 @@ using namespace std;
 
 int main() {
         cout << "sglhy";
-        cout << "xlcow";
+        cout << "stkyl";
 return 0;
 }
