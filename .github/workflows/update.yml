@@ -22,7 +22,7 @@ jobs:
       - name: Clone importer script repo
         uses: actions/checkout@v2
         with:
-          repository: https://github.com/miromannino/Contributions-Importer-For-Github.git
+          repository: miromannino/Contributions-Importer-For-Github
 
       - name: Setup GitLab SSH
         uses: MrSquaare/ssh-setup-action@v1
@@ -36,3 +36,6 @@ jobs:
       
       - name: Run importer script
         run: ls
+
+      - name: Remove clonned repos
+        run: rm -rf /tmp/first
