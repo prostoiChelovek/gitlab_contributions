@@ -15,8 +15,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Setup git creditationals
-        run: git config --global user.email "i.prostoi.chelovek@yandex.ru" && \
-             git config --global user.name "prostoichelovek"
+        run: git config --global user.email "i.prostoi.chelovek@yandex.ru" && git config --global user.name "prostoichelovek"
 
       - name: Setup python
         uses: actions/setup-python@v2
