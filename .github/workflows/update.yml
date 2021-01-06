@@ -20,9 +20,9 @@ jobs:
          python-version: 3.8
 
       - name: Clone importer script repo
-        uses: actions/checkout@v2
-        with:
-          repository: miromannino/Contributions-Importer-For-Github
+        run: git clone https://github.com/miromannino/Contributions-Importer-For-Github.git \
+                && Contributions-Importer-For-Github/* . \
+                && rm -rf Contributions-Importer-For-Github/
 
       - name: Setup GitLab SSH
         uses: MrSquaare/ssh-setup-action@v1
@@ -36,9 +36,6 @@ jobs:
 
       - name: Clone the second GitLab repository
         run: git clone -b dev ${{ secrets.SECOND_GITLAB_REPO }} /tmp/second
-
-      - name: Show working directory
-        run: ls
 
       - name: Run importer script on the first repo
         run: python3 run.py /tmp/first
