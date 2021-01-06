@@ -14,6 +14,10 @@ jobs:
       - name: Checkout repo content
         uses: actions/checkout@v2
 
+      - name: Setup git creditationals
+        run: git config --global user.email i.prostoi.chelovek@yandex.ru \
+             git config --global user.name prostoichelovek
+
       - name: Setup python
         uses: actions/setup-python@v2
         with:
@@ -43,6 +47,9 @@ jobs:
 
       - name: Run importer script on the second repo
         run: python3 run.py /tmp/second
+
+      - name: Push created commits
+        run: git push
 
       - name: Remove clonned repos
         run: rm -rf /tmp/first && rm -rf /tmp/second
