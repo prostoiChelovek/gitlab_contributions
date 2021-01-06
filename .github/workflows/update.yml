@@ -37,6 +37,9 @@ jobs:
       - name: Clone the second GitLab repository
         run: git clone -b dev ${{ secrets.SECOND_GITLAB_REPO }} /tmp/second
 
+      - name: Show working directory
+        run: ls
+
       - name: Run importer script on the first repo
         run: python3 run.py /tmp/first
 
