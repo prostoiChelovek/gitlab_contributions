@@ -31,11 +31,17 @@ jobs:
           private-key: ${{ secrets.SSH_PRIVATE_KEY_GITLAB }}
           private-key-name: github_actions
 
-      - name: Clone first GitLab repository
-        run: git clone ${{ secrets.FIRST_GITLAB_REPO }} /tmp/first
-      
-      - name: Run importer script
-        run: ls
+      - name: Clone the first GitLab repository
+        run: git clone -b dev ${{ secrets.FIRST_GITLAB_REPO }} /tmp/first
+
+      - name: Clone the second GitLab repository
+        run: git clone -b dev ${{ secrets.SECOND_GITLAB_REPO }} /tmp/second
+
+      - name: Run importer script on the first repo
+        run: python3 run.py /tmp/first
+
+      - name: Run importer script on the second repo
+        run: python3 run.py /tmp/second
 
       - name: Remove clonned repos
-        run: rm -rf /tmp/first
+        run: rm -rf /tmp/first && rm -rf /tmp/second
