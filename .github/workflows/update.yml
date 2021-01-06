@@ -20,9 +20,7 @@ jobs:
          python-version: 3.8
 
       - name: Clone importer script repo
-        run: git clone https://github.com/miromannino/Contributions-Importer-For-Github.git \
-                && mv Contributions-Importer-For-Github/* . \
-                && rm -rf Contributions-Importer-For-Github/
+        run: git clone https://github.com/miromannino/Contributions-Importer-For-Github.git
 
       - name: Setup GitLab SSH
         uses: MrSquaare/ssh-setup-action@v1
