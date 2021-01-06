@@ -22,6 +22,9 @@ jobs:
       - name: Clone importer script repo
         run: git clone https://github.com/miromannino/Contributions-Importer-For-Github.git
 
+      - name: Install importer script dependencies
+        run: python3 -m pip install gitpython pathlib
+
       - name: Setup GitLab SSH
         uses: MrSquaare/ssh-setup-action@v1
         with:
