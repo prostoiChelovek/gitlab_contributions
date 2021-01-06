@@ -1,8 +1,11 @@
+import sys
 import git
 
 from git_contributions_importer import *
 
-repo = git.Repo("/tmp/first")
+repo_path = sys.argv[1] if len(sys.argv) > 1 else "/tmp/first"
+
+repo = git.Repo(repo_path)
 mock_repo = git.Repo(".")
 
 importer = Importer([repo], mock_repo)
