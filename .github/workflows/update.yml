@@ -25,6 +25,9 @@ jobs:
       - name: Clone importer script repo
         run: git clone https://github.com/miromannino/Contributions-Importer-For-Github.git
 
+      - name: Patch the importer
+        run: git apply --directory Contributions-Importer-For-Github ignore_before_date.patch
+
       - name: Install importer script dependencies
         run: python3 -m pip install gitpython pathlib
 
