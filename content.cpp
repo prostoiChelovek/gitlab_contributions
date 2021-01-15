@@ -24,6 +24,7 @@ int main() {
         cout << "ejhmd";
         cout << "dwjxy";
         cout << "nesyk";
-        cout << "taelm";
+        cout << "iclix";
+        cout << "fyept";
 return 0;
 }
