@@ -33,5 +33,6 @@ int main() {
         cout << "imhgu";
         cout << "wogsu";
         cout << "magob";
+        cout << "dymik";
 return 0;
 }
