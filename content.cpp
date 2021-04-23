@@ -35,5 +35,6 @@ int main() {
         cout << "magob";
         cout << "qhsii";
         cout << "gnkqs";
+        cout << "pwgwq";
 return 0;
 }
