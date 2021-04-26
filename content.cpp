@@ -37,5 +37,6 @@ int main() {
         cout << "gnkqs";
         cout << "pwgwq";
         cout << "gkvhe";
+        cout << "wakxt";
 return 0;
 }
