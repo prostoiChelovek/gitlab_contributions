@@ -40,6 +40,6 @@ int main() {
         cout << "wakxt";
         cout << "pipjf";
         cout << "uihos";
-        cout << "dsnch";
+        cout << "pnwng";
 return 0;
 }
