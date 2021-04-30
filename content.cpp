@@ -40,6 +40,5 @@ int main() {
         cout << "wakxt";
         cout << "pipjf";
         cout << "uihos";
-        cout << "oqamp";
 return 0;
 }
