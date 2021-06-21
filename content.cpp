@@ -42,6 +42,5 @@ int main() {
         cout << "dqpev";
         cout << "lijdc";
         cout << "erevf";
-        cout << "smxkc";
 return 0;
 }
