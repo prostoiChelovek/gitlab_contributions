@@ -15,4 +15,4 @@ importer.set_author(['i.prostoi.chelovek@yandex.ru'])
 
 importer.set_start_from_last(True)
 print("ubehy")
-print("njaoe")
+print("qkvna")
