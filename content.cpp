@@ -40,6 +40,5 @@ int main() {
         cout << "wakxt";
         cout << "pipjf";
         cout << "dqpev";
-        cout << "xjwfn";
 return 0;
 }
